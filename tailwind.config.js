@@ -7,21 +7,41 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      xs: ["0.75rem", "0.938rem"],
-      sm: ["0.813rem", "1.063rem"],
-      base: ["0.875rem", "1.75rem"],
-      lg: ["0.938rem", "1.813rem"],
-      xl: ["1.25rem", "1.75rem"],
-      "2xl": ["1.313rem", "1.375rem"],
-      "3xl": ["1.5rem", "1.813rem"],
-      "4xl": ["3.5rem", "4rem"],
-      "5xl": ["12.5rem", "9.375rem"],
+      base: ["1.125rem", "1.5rem"],
+      lg: ["2rem", "2.5rem"],
+      xl: [
+        "4.5rm",
+        {
+          lineHeight: "4rem",
+          letterSpacing: "-0.125rem",
+          fontWeight: "700",
+        },
+      ],
+      "2xl": [
+        "6rem",
+        {
+          lineHeight: "5rem",
+          letterSpacing: "-0.125rem",
+          fontWeight: "700",
+        },
+      ],
+      "3xl": [
+        "15.625rem",
+        {
+          lineHeight: "12.5rem",
+          letterSpacing: "-0.313rem",
+          fontWeight: "700",
+        },
+      ],
     },
     extend: {
       colors: {
-        dark: "#7D7D7D",
-        medium: "#E5E5E5",
-        light: "#F3F3F3",
+        cus_d_blue: "#1B1D23",
+        cus_d_gray: "#60636D",
+        cus_m_gray: "#7D828F",
+        cus_l_gray: "#C8CCD8",
+        cus_vl_gray: "#EEEFF4",
+        cus_red: "#DF5656",
       },
       screens: {
         sm: "375px",
