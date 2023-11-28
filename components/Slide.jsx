@@ -46,11 +46,11 @@ const Slide = ({ index }) => {
         <Image src={DATA[index].imgmb} alt={DATA[index].title1} fill />
       </div>
       {/* MD || Tablet*/}
-      <div className="sd:hidden md:block w-[573px] h-[720px] lg:hidden brightness-50">
+      <div className="hidden md:block lg:hidden w-[573px] h-[720px]  brightness-50">
         <Image src={DATA[index].imgtb} alt={DATA[index].title1} fill />
       </div>
       {/* LG || Desktop */}
-      <div className="sd:hidden lg:block w-[1110px] h-[720px] brightness-50">
+      <div className="hidden lg:block w-[1110px] h-[720px] brightness-50">
         <Image src={DATA[index].imgdk} alt={DATA[index].title1} fill />
       </div>
 

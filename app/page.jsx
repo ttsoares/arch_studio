@@ -126,11 +126,11 @@ export default function Home() {
           <Image src={TeamMob} alt="Building" />
         </div>
         {/* MD || Tablet*/}
-        <div className="sd:hidden md:block w-[573px] h-[560px] lg:hidden brightness-50">
+        <div className="hidden md:block lg:hidden w-[573px] h-[560px]  brightness-50">
           <Image src={TeamTbl} alt="Building" />
         </div>
         {/* LG || Desktop */}
-        <div className="sd:hidden lg:block w-[1110px] h-[560px] brightness-50">
+        <div className="hidden lg:block w-[1110px] h-[560px] brightness-50">
           <Image src={TeamDsk} alt="Building" />
         </div>
 
