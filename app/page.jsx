@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className="flex flex-col relative w-full min-h-screen md:ml-2 md:px-24 text-white">
       {/*  */}
-      <p className="hidden md:block absolute top-0 left-9 text-cus_l_gray transform rotate-90 text-base tracking-widest">
+      <p className="hidden md:block absolute top-5 left-9 text-cus_l_gray transform rotate-90 text-base tracking-widest">
         H O M E
       </p>
 
