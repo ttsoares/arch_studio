@@ -10,7 +10,7 @@ module.exports = {
       base: ["1.125rem", "1.5rem"],
       lg: ["2rem", "2.5rem"],
       xl: [
-        "4.5rm",
+        "4.5rem",
         {
           lineHeight: "4rem",
           letterSpacing: "-0.125rem",
