@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-import Buttom from "./Buttom";
+import Button from "./Button";
 
 const DATA = [
   {
@@ -63,9 +64,11 @@ const Slide = ({ index }) => {
         </h1>
         <p className="w-full md:w-[40%] my-10">{DATA[index].text}</p>
 
-        <Buttom link="portfolio">
-          <p>See Our Portfolio</p>
-        </Buttom>
+        <Link href="/portfolio">
+          <Button>
+            <p>See Our Portfolio</p>
+          </Button>
+        </Link>
       </div>
     </>
   );

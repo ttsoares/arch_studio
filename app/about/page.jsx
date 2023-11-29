@@ -60,12 +60,15 @@ const Page = () => {
             <Image src={HeroMob} alt="Keyboard" fill />
           </div>
 
-          <h1 className="absolute lg:top-32 md:top-44 md:-right-16 lg:right-5 z-20 font-semibold md:text-[10rem] lg:text-3xl text-cus_l_gray">
+          <h1 className="absolute lg:top-[130px] md:top-44 md:-right-16 lg:right-5 z-20 font-semibold md:text-[10rem] lg:text-3xl text-cus_vl_gray">
             About
           </h1>
           {/*  */}
-          <div className="flex flex-col justify-end items-center absolute bottom-0 md:left-14 lg:right-0 bg-white md:w-[572px] md:h-[431px] lg:w-[793px] lg:h-[503px]">
-            {/*  */}
+          <div
+            className="flex flex-col justify-end items-center absolute bg-white bottom-0
+            md:left-14 md:w-[572px] md:h-[431px]
+            lg:left-auto lg:-right-40 lg:bottom-0 lg:w-[793px] lg:h-[503px] "
+          >
             <div className=" flex flex-col items-center justify-end">
               <h2 className="text-xl font-bold">Your team of</h2>
               <h2 className="text-xl font-bold">professionals</h2>

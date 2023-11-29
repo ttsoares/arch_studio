@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import Welcome from "/public/imgs/home/desktop/image-welcome.jpg";
 import TeamDsk from "/public/imgs/home/desktop/image-small-team.jpg";
@@ -10,7 +11,7 @@ import TeamTbl from "/public/imgs/home/tablet/image-small-team.jpg";
 import TeamMob from "/public/imgs/home/mobile/image-small-team.jpg";
 
 import Slide from "@/components/Slide";
-import Buttom from "@/components/Buttom";
+import Button from "@/components/Button";
 import Featured from "@/components/Featured";
 
 //-------------------------------
@@ -145,9 +146,11 @@ export default function Home() {
           <h2 className="text-[4rem] leading-[3.8rem] md:text-xl text-white font-fold mb-10">
             big ideas
           </h2>
-          <Buttom link="about">
-            <p>About Us</p>
-          </Buttom>
+          <Link href="/about">
+            <Button>
+              <p>About Us</p>
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -157,17 +160,21 @@ export default function Home() {
           <h2 className="text-xl font-bold">Featured</h2>
           {/* For MD and LG */}
           <div className="hidden md:block">
-            <Buttom link="portfolio">
-              <p>See All</p>
-            </Buttom>
+            <Link href="/portfolio">
+              <Button>
+                <p>See All</p>
+              </Button>
+            </Link>
           </div>
         </div>
         <Featured />
         {/* Only for SD */}
         <div className="md:hidden mt-5">
-          <Buttom link="portfolio" width="full">
-            <p>See All</p>
-          </Buttom>
+          <Link href="/portfolio">
+            <Button width="full">
+              <p>See All</p>
+            </Button>
+          </Link>
         </div>
       </div>
     </main>

@@ -35,7 +35,7 @@ const Nav = () => {
   return (
     <section className="w-full my-4 h-32 bg-white flex items-center justify-between md:justify-start relative">
       <Link href="/">
-        <div className="ml-12 lg:ml-20 h-10 w-24 flex">
+        <div className="ml-12 lg:ml-20 h-10 w-24 flex hover:animate-bounce">
           <Image src={Logo} alt="Logo Arch" />
         </div>
       </Link>
@@ -73,7 +73,7 @@ const Nav = () => {
         {MENU_ITENS.map((item, index) => (
           <div
             key={index}
-            className="px-7 text-sm text-base text-cus_m_gray font-bold flex items-center"
+            className="px-7 text-base hover:font-bold text-cus_m_gray flex items-center"
           >
             <Link href={item.link}>{item.text}</Link>
           </div>
