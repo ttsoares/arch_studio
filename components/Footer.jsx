@@ -37,8 +37,8 @@ const Footer = () => {
         {/* SD */}
         <div className="md:hidden  top-10 -right-1 z-10">
           <Link href="/portfolio">
-            <Button>
-              <p className="text-base">See Out Portfolio</p>
+            <Button width="full">
+              <p>See Out Portfolio</p>
             </Button>
           </Link>
         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
       <div className="hidden md:block md:absolute top-10 -right-1 z-10">
         <Link href="/portfolio">
           <Button>
-            <p className="text-base">See Out Portfolio</p>
+            <p>See Out Portfolio</p>
           </Button>
         </Link>
       </div>

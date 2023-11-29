@@ -17,19 +17,53 @@ const MyMap = () => {
 
   return (
     <div className="w-full">
-      <Map
-        initialViewState={{
-          longitude: -93.8,
-          latitude: 34.7,
-          zoom: 4.4,
-        }}
-        {...settings}
-        style={{ width: 1100, height: 500, margin: "auto" }}
-        mapStyle="https://api.maptiler.com/maps/streets/style.json?key=8bzvn7xDYUv2Ymp6UHYx"
-      >
-        <Marker longitude={-86.7499} latitude={35.991} color="black" />
-        <Marker longitude={-99.9066} latitude={31.8665} color="black" />
-      </Map>
+      {/* SD */}
+      <div className="md:hidden w-full">
+        <Map
+          initialViewState={{
+            longitude: -93.8,
+            latitude: 34.7,
+            zoom: 3.8,
+          }}
+          {...settings}
+          style={{ width: 375, height: 367, margin: "auto" }}
+          mapStyle="https://api.maptiler.com/maps/streets/style.json?key=8bzvn7xDYUv2Ymp6UHYx"
+        >
+          <Marker longitude={-86.7499} latitude={35.991} color="black" />
+          <Marker longitude={-99.9066} latitude={31.8665} color="black" />
+        </Map>
+      </div>
+      {/* MD */}
+      <div className="hidden md:block lg:hidden w-full">
+        <Map
+          initialViewState={{
+            longitude: -93.8,
+            latitude: 34.7,
+            zoom: 4,
+          }}
+          {...settings}
+          style={{ width: 572, height: 560, margin: "auto" }}
+          mapStyle="https://api.maptiler.com/maps/streets/style.json?key=8bzvn7xDYUv2Ymp6UHYx"
+        >
+          <Marker longitude={-86.7499} latitude={35.991} color="black" />
+          <Marker longitude={-99.9066} latitude={31.8665} color="black" />
+        </Map>
+      </div>
+      <div className="hidden lg:block w-full">
+        <Map
+          initialViewState={{
+            longitude: -93.8,
+            latitude: 34.7,
+            zoom: 4.4,
+          }}
+          {...settings}
+          style={{ width: 1110, height: 560, margin: "auto" }}
+          mapStyle="https://api.maptiler.com/maps/streets/style.json?key=8bzvn7xDYUv2Ymp6UHYx"
+        >
+          <Marker longitude={-86.7499} latitude={35.991} color="black" />
+          <Marker longitude={-99.9066} latitude={31.8665} color="black" />
+        </Map>
+      </div>
     </div>
   );
 };

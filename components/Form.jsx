@@ -7,8 +7,6 @@ import { useForm } from "react-hook-form";
 
 import Arrow from "/public/imgs/icon-arrow.svg";
 
-import Buttom from "./Button";
-
 //--------------------------
 function ContactForm() {
   const form = useForm();
@@ -33,11 +31,19 @@ function ContactForm() {
         className="space-y-5 mx-5 "
       >
         <div className="flex flex-col justify-between space-y-2 relative">
-          <div className="p-3 border-b-2  border-gray-400 flex flex-col shrink relative">
+          <div
+            className={`p-3 border-b-2 ${
+              errors.name
+                ? "border-red-500"
+                : "border-gray-400 hover:border-b-4 "
+            }   flex flex-col shrink relative`}
+          >
             <div className="flex">
               <input
                 placeholder="Name"
-                className="shrink flex-1 ml-2 placeholder-shown:font-bold placeholder:text-gray-300 py-3"
+                className={`shrink flex-1 ml-2  py-3 ${
+                  errors.name && "placeholder:text-red-400 "
+                }`}
                 type="text"
                 id="name"
                 {...register("name", {
@@ -48,18 +54,26 @@ function ContactForm() {
                 })}
               />
             </div>
-            <p className=" absolute bottom-0 right-0 text-red-500">
+            <p className=" absolute bottom-0 font-semibold right-0 text-red-500">
               {errors.name?.message}
             </p>
           </div>
         </div>
 
         <div className="flex w-full flex-col justify-between space-y-2">
-          <div className="p-3 border-b-2  border-gray-400 flex flex-col shrink relative">
+          <div
+            className={`p-3 border-b-2 ${
+              errors.email
+                ? "border-red-500"
+                : "border-gray-400 hover:border-b-4"
+            } flex flex-col shrink relative`}
+          >
             <div className="flex ">
               <input
                 placeholder="Email"
-                className="shrink flex-1 ml-2 placeholder-shown:font-bold placeholder:text-gray-300 py-3"
+                className={`shrink flex-1 ml-2  py-3 ${
+                  errors.email && "placeholder:text-red-400 "
+                }`}
                 type="email"
                 id="email"
                 {...register("email", {
@@ -71,14 +85,20 @@ function ContactForm() {
                 })}
               />
             </div>
-            <p className=" absolute bottom-0 right-0 text-red-500">
+            <p className=" absolute bottom-0 font-semibold right-0 text-red-500">
               {errors.email?.message}
             </p>
           </div>
         </div>
 
         <div className="flex w-full flex-col justify-between">
-          <div className="p-3 border-b-2  border-gray-400 flex flex-col shrink relative ">
+          <div
+            className={`p-3 border-b-2 ${
+              errors.message
+                ? "border-red-500"
+                : "border-gray-400 hover:border-b-4"
+            } flex flex-col shrink relative`}
+          >
             <textarea
               placeholder="Message"
               id="message"
@@ -86,15 +106,26 @@ function ContactForm() {
               {...register("message", {
                 required: "Can't be empty.",
               })}
-              className="shrink flex-1 ml-2 placeholder-shown:font-bold placeholder:text-gray-300 py-3"
+              className={`shrink flex-1 ml-2  py-3 ${
+                errors.message && "placeholder:text-red-400 "
+              }`}
             />
-            <p className="absolute bottom-0 right-0 text-red-500 self-start">
+            <p className="absolute bottom-0 font-semibold right-0 text-red-500 self-start">
               {errors.message?.message}
             </p>
           </div>
 
           <div className="self-end">
-            <Buttom width="fit" ppxx="8" type="submit" />
+            <button
+              className="bg-cus_d_blue h-20 w-20 flex justify-center items-center"
+              type="submit"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g fill="none" fillRule="evenodd" stroke="#fff" strokeWidth="2">
+                  <path d="M15 1l9 9-9 9M0 10h24" />
+                </g>
+              </svg>
+            </button>
           </div>
         </div>
       </form>

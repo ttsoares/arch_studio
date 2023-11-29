@@ -56,45 +56,53 @@ const Page = () => {
         </div>
       </div>
       {/* Contact details */}
-      <div className="w-[90%]  mx-auto flex">
-        <div className="w-1/3 m-5 text-xl font-bold text-cus_d_blue">
+      <div className="w-full lg:w-[90%] lg:mx-auto flex flex-col lg:flex-row">
+        {/*  */}
+        <div className="w-full lg:w-1/3 m-5 text-xl font-bold text-cus_d_blue">
           <h2>Contact</h2>
           <h2>Details</h2>
         </div>
-        <div className="w-1/3 m-5 text-sm text-cus_d_gray">
-          <p className="mb-4 font-semibold ">Main Office</p>
-          <p>
-            Mail: <span className="ml-14">archone@mail.com</span>
-          </p>
-          <p>
-            Address: <span className="ml-7">1892 Chenoweth Drive TN</span>
-          </p>
-          <p>
-            Phone: <span className="ml-5">123-456-3451</span>
-          </p>
-          <div className="mt-6 ml-2 flex justify-start items-center">
-            <p className="mr-4">View on the map</p>
-            <Image src={Arrow} alt="arrow right" width={20} height={20} />
+        {/*  */}
+        <div className="flex flex-col lg:flex-row justify-between w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 m-5 text-sm text-cus_d_gray border-2 flex lg:flex-col justify-between">
+            <div>
+              <p className="mb-4 font-semibold ">Main Office</p>
+              <p>
+                Mail: <span className="ml-14">archone@mail.com</span>
+              </p>
+              <p>
+                Address: <span className="ml-7">1892 Chenoweth Drive TN</span>
+              </p>
+              <p>
+                Phone: <span className="ml-5">123-456-3451</span>
+              </p>
+            </div>
+            <div className="mt-6 ml-2 flex justify-start items-center">
+              <p className="mr-4 font-bold">View on the map</p>
+              <Image src={Arrow} alt="arrow right" width={20} height={20} />
+            </div>
           </div>
-        </div>
-        <div className="w-1/3 m-5 text-sm text-cus_d_gray">
-          <p className="mb-4 font-semibold ">Office II</p>
-          <p>
-            Mail: <span className="ml-14">archtwo@mail.com</span>
-          </p>
-          <p>
-            Address: <span className="ml-7">3399 Wines lane TX</span>
-          </p>
-          <p>
-            Phone: <span className="ml-5">832-123-4321</span>
-          </p>
-          <div className="mt-6 ml-2 flex justify-start items-center">
-            <p className="mr-4">View on the map</p>
-            <Image src={Arrow} alt="arrow right" width={20} height={20} />
+          <div className="w-full lg:w-1/2 m-5 text-sm text-cus_d_gray border-2 flex lg:flex-col justify-between">
+            <div>
+              <p className="mb-4 font-semibold ">Office II</p>
+              <p>
+                Mail: <span className="ml-14">archtwo@mail.com</span>
+              </p>
+              <p>
+                Address: <span className="ml-7">3399 Wines lane TX</span>
+              </p>
+              <p>
+                Phone: <span className="ml-5">832-123-4321</span>
+              </p>
+            </div>
+            <div className="mt-6 ml-2 flex justify-start items-center">
+              <p className="mr-4 font-bold">View on the map</p>
+              <Image src={Arrow} alt="arrow right" width={20} height={20} />
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-[90%] flex mx-auto items-center mb-32">
+      <div className="w-full lg:w-[90%] flex lg:mx-auto items-center mb-32">
         <MyMap KEY={MyKEY} />
       </div>
       {/* Form */}
