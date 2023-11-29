@@ -13,7 +13,7 @@ import Buttom from "@/components/Buttom";
 const Footer = () => {
   return (
     <div className="flex  flex-col md:flex-row w-full lg:w-[77%] h-40 mx-auto mt-32 items-center justify-between relative">
-      <div className="bg-cus_l_gray flex flex-col md:flex-row items-center justify-start w-full md:w-[80%] relative">
+      <div className="bg-cus_vl_gray flex flex-col md:flex-row items-center justify-start w-full md:w-[80%] relative">
         <Link href="/">
           <div className="absolute -top-16 left-32 md:static w-28 h-28 lg:w-40 lg:h-40 bg-black flex">
             <Image
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </Link>
 
-        <div className="flex-1 h-20 flex flex-col md:flex-row items-center justify-start md:ml-8 text-gray-500 mt-16 md:mt-0">
+        <div className="flex-1 h-20 flex flex-col md:flex-row items-center justify-start md:ml-8 text-cus_m_gray mt-16 md:mt-0">
           {MENU_ITENS.map((item, index) => (
             <div key={index} className="py-6 md:py-0 md:px-4 lg:px-8">
               <Link href={item.link}>{item.text}</Link>

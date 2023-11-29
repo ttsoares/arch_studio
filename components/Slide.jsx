@@ -54,10 +54,14 @@ const Slide = ({ index }) => {
         <Image src={DATA[index].imgdk} alt={DATA[index].title1} fill />
       </div>
 
-      <div className="absolute bottom-[20%] left-40">
-        <h1 className="text-2xl font-bold">{DATA[index].title1}</h1>
-        <h1 className="text-2xl font-bold">{DATA[index].title2}</h1>
-        <p className="w-[40%] my-10">{DATA[index].text}</p>
+      <div className="absolute top-20 left-5 md:bottom-[20%] md:left-40">
+        <h1 className="text-[4rem] leading-[3.2rem] md:text-2xl font-bold">
+          {DATA[index].title1}
+        </h1>
+        <h1 className="text-[4rem] leading-[3.2rem] md:text-2xl font-bold">
+          {DATA[index].title2}
+        </h1>
+        <p className="w-full md:w-[40%] my-10">{DATA[index].text}</p>
 
         <Buttom link="portfolio">
           <p>See Our Portfolio</p>

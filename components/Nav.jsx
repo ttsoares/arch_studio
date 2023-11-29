@@ -35,7 +35,7 @@ const Nav = () => {
   return (
     <section className="w-full my-4 h-32 bg-white flex items-center justify-between md:justify-start relative">
       <Link href="/">
-        <div className="ml-20 h-10 w-24 flex">
+        <div className="ml-12 lg:ml-20 h-10 w-24 flex">
           <Image src={Logo} alt="Logo Arch" />
         </div>
       </Link>

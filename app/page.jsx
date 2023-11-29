@@ -20,14 +20,14 @@ export default function Home() {
   return (
     <main className="flex flex-col relative w-full min-h-screen md:ml-2 md:px-24 text-white">
       {/*  */}
-      <p className="hidden md:block absolute top-5 left-9 text-cus_l_gray transform rotate-90 text-base tracking-widest">
+      <p className="hidden md:block absolute top-5 left-2 lg:left-9 text-cus_l_gray transform rotate-90 text-base tracking-widest">
         H O M E
       </p>
 
       {/* Hero */}
-      <div className="w-[90%] relative mx-auto mb-32">
+      <div className="w-full lg:w-[90%]  lg:mx-auto mb:20 lg:mb-32 relative">
         <Slide index={slide} />
-        <div className=" absolute bottom-0 -left-20 flex text-black text-lg font-bold">
+        <div className="hidden absolute bottom-0 -left-20 md:flex text-black text-lg font-bold">
           <div
             onClick={() => setSlide(0)}
             className={`   flex w-20 h-20  items-center justify-center ${
@@ -35,7 +35,7 @@ export default function Home() {
             } hover:cursor-pointer 
               ${
                 slide === 0
-                  ? "bg-cus_d_blue text-white hover:bg-black"
+                  ? "bg-cus_d_blue text-white hover:bg-cus_d_blue"
                   : "bg-white text-black"
               }`}
           >
@@ -49,7 +49,7 @@ export default function Home() {
               hover:cursor-pointer
               ${
                 slide === 1
-                  ? "bg-cus_d_blue text-white hover:bg-black"
+                  ? "bg-cus_d_blue text-white hover:bg-cus_d_blue"
                   : "bg-white text-black"
               }  `}
           >
@@ -63,7 +63,7 @@ export default function Home() {
               } hover:cursor-pointer
               ${
                 slide === 2
-                  ? "bg-cus_d_blue text-white hover:bg-black"
+                  ? "bg-cus_d_blue text-white hover:bg-cus_d_blue"
                   : "bg-white text-black"
               }`}
           >
@@ -77,7 +77,7 @@ export default function Home() {
               } hover:cursor-pointer
               ${
                 slide === 3
-                  ? "bg-cus_d_blue text-white hover:bg-black"
+                  ? "bg-cus_d_blue text-white hover:bg-cus_d_blue"
                   : "bg-white text-black"
               }`}
           >
@@ -87,14 +87,18 @@ export default function Home() {
       </div>
 
       {/* Welcome */}
-      <div className="w-[90%] relative flex mx-auto mt-32 mb-32">
-        <p className="absolute -top-20 z-20 font-bold text-3xl text-cus_vl_gray">
+      <div className="w-full lg:w-[90%] relative flex flex-col lg:flex-row lg:mx-auto mt-10 lg:mt-32 mb-20 lg:mb-32 overflow-hidden">
+        <p className="hidden md:block self-center lg:absolute -top-20 z-20 font-bold text-[10rem] lg:text-3xl text-cus_vl_gray">
           Welcome
         </p>
-        <div className="mt-20 w-2/3  text-black">
-          <div className="w-2/3 mt-1 ml-36 pl-10 space-y-6 text-xs">
-            <h2 className="text-xl text-cus_d_blue font-bold">Welcome to</h2>
-            <h2 className="text-xl text-cus_d_blue font-bold">Arch Studio</h2>
+        <div className="lg:mt-20 w-full lg:w-2/3  text-black">
+          <div className="w-full px-5 md:px-0 lg:w-2/3 mt-1 lg:ml-36 lg:pl-10 space-y-6 text-xs">
+            <h2 className="text-[4rem] leading-[3rem] md:text-xl text-cus_d_blue font-bold">
+              Welcome to
+            </h2>
+            <h2 className="text-[4rem] leading-[3rem] md:text-xl text-cus_d_blue font-bold">
+              Arch Studio
+            </h2>
             <p>
               We have a unique network and skillset to help bring your projects
               to life. Our small team of highly skilled individuals combined
@@ -114,15 +118,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="w-1/3">
+        <div className="hidden lg:block w-1/3">
           <Image width={350} height={568} src={Welcome} alt="Building" />
         </div>
       </div>
 
       {/* Smal team */}
-      <div className="w-[90%] relative mx-auto mb-32">
+      <div className="w-full lg:w-[90%] relative lg:mx-auto mb-20 lg:mb-32">
         {/* SD || Mobile*/}
-        <div className=" w-[375px] h-[560px] md:hidden brightness-50">
+        <div className=" w-[378px] h-[560px] md:hidden brightness-50">
           <Image src={TeamMob} alt="Building" />
         </div>
         {/* MD || Tablet*/}
@@ -135,8 +139,12 @@ export default function Home() {
         </div>
 
         <div className="absolute top-[20%] left-[10%] font-bold">
-          <h2 className="text-xl text-white font-fold">Small team,</h2>
-          <h2 className="text-xl text-white font-fold mb-10">big ideas</h2>
+          <h2 className="text-[4rem] leading-[3.8rem] md:text-xl text-white font-fold">
+            Small team,
+          </h2>
+          <h2 className="text-[4rem] leading-[3.8rem] md:text-xl text-white font-fold mb-10">
+            big ideas
+          </h2>
           <Buttom link="about">
             <p>About Us</p>
           </Buttom>
@@ -144,14 +152,23 @@ export default function Home() {
       </div>
 
       {/* Featured */}
-      <div className="w-[90%] relative mx-auto text-black ">
+      <div className="w-full lg:w-[90%] relative lg:mx-auto text-black px-8 md:px-0">
         <div className="flex items-center justify-between mb-12">
-          <h2 className="text-xl font-bold">Features</h2>
-          <Buttom link="portfolio">
+          <h2 className="text-xl font-bold">Featured</h2>
+          {/* For MD and LG */}
+          <div className="hidden md:block">
+            <Buttom link="portfolio">
+              <p>See All</p>
+            </Buttom>
+          </div>
+        </div>
+        <Featured />
+        {/* Only for SD */}
+        <div className="md:hidden mt-5">
+          <Buttom link="portfolio" width="full">
             <p>See All</p>
           </Buttom>
         </div>
-        <Featured />
       </div>
     </main>
   );
