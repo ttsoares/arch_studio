@@ -26,14 +26,14 @@ export const MENU_ITENS = [
 
 //-----------------
 const Nav = () => {
-  const [showBM, setShowBM] = useState(false);
+  const [showBM, setShowBM] = useState(true);
 
   function toggleMenu() {
     setShowBM(!showBM);
   }
 
   return (
-    <section className="w-full my-4 h-32 bg-white flex items-center justify-between md:justify-start relative">
+    <section className="w-full lg:my-4 h-20 lg:h-32 bg-white flex items-center justify-between md:justify-start relative">
       <Link href="/">
         <div className="ml-12 lg:ml-20 h-10 w-24 flex hover:animate-bounce">
           <Image src={Logo} alt="Logo Arch" />
@@ -43,12 +43,12 @@ const Nav = () => {
       {/* SM */}
       <div className="md:hidden mr-10">
         {showBM ? (
-          <div className="absolute -mt-5 inset-0 w-full h-screen z-20  bg-slate-400/50 ">
-            <div className="absolute top-16 right-32 w-38 h-64 bg-gray-500 p-10">
+          <div className="absolute -mt-5 inset-0 w-full h-screen z-20  bg-cus_d_blue/50 ">
+            <div className="absolute top-[100px] right-0 w-[340px] h-64 bg-cus_vl_gray p-10">
               {MENU_ITENS.map((item, index) => (
                 <div
                   key={index}
-                  className="px-8 py-4 text-base font-bold flex items-center"
+                  className="px-8 py-3 text-lg font-bold flex items-center"
                 >
                   <Link href={item.link}>{item.text}</Link>
                 </div>
@@ -56,7 +56,7 @@ const Nav = () => {
             </div>
             <div
               onClick={toggleMenu}
-              className="p-2 absolute top-16 right-11 text-3xl font-bold"
+              className="p-2 absolute top-10 right-10 text-3xl font-bold"
             >
               <Image src={Close} alt="Close menu" width={20} height={20} />
             </div>

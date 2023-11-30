@@ -11,7 +11,7 @@ const Buttom = ({ children, type = "button", width = "fit" }) => {
       type={type}
       className={`${
         width === "full" ? "w-full" : "w-fit"
-      } flex h-20 md:px-10 lg:px-20 bg-cus_d_blue text-white items-center justify-center hover:bg-cus_m_gray`}
+      } flex h-20 px-10 lg:px-20 bg-cus_d_blue text-white items-center justify-center hover:bg-cus_m_gray`}
     >
       {children && <p className={`font-bold mr-4`}>{children}</p>}
       <Image
