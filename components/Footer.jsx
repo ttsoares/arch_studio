@@ -24,11 +24,11 @@ const Footer = () => {
           </div>
         </Link>
 
-        <div className="flex-1 h-20 flex flex-col md:flex-row items-center justify-start md:ml-8 text-cus_m_gray mt-16 md:mt-0">
+        <div className="flex-1 h-20 flex flex-col md:flex-row items-center justify-center lg:justify-start md:ml-8 text-cus_m_gray mt-16 md:mt-0">
           {MENU_ITENS.map((item, index) => (
             <div
               key={index}
-              className="py-6 md:py-0 md:px-4 lg:px-8 hover:font-bold"
+              className="py-6 md:py-0 hover:font-bold w-[70px] mx-7 flex justify-center"
             >
               <Link href={item.link}>{item.text}</Link>
             </div>

@@ -27,7 +27,7 @@ const Featured = () => {
         {/* LG || Desktop */}
         <div className="hidden lg:block relative  w-[350px] h-[560px] brightness-50">
           <Image src={DelSolDsk} alt="Del Sol" fill />
-          <p className="absolute top-8 right-0 text-3xl font-bold text-white/50">
+          <p className="absolute top-8 -right-2.5 text-3xl font-bold text-white/50">
             1
           </p>
         </div>
@@ -47,9 +47,9 @@ const Featured = () => {
           <Image src={Tbl228B} alt="Del Sol" fill />
         </div>
         {/* LG || Desktop */}
-        <div className="hidden lg:block relative  w-[350px] h-[560px] brightness-50">
+        <div className="hidden lg:block relative  w-[350px] h-[560px] brightness-50 overflow-hidden">
           <Image src={Dsk228B} alt="Del Sol" fill />
-          <p className="absolute top-8 right-0 text-3xl font-bold text-white/50">
+          <p className="absolute top-8 -right-2.5 text-3xl font-bold text-white/50">
             2
           </p>
         </div>
@@ -58,7 +58,6 @@ const Featured = () => {
           <p className="text-xs">View All Project</p>
         </div>
       </div>
-      {/*  */}
       <div className="w-1/3   relative">
         {/* SD || Mobile*/}
         <div className="md:hidden relative w-[311px] h-[240px]  brightness-50">
@@ -69,9 +68,9 @@ const Featured = () => {
           <Image src={LeProtTbl} alt="Del Sol" fill />
         </div>
         {/* LG || Desktop */}
-        <div className="hidden lg:block relative  w-[350px] h-[560px] brightness-50">
+        <div className="hidden lg:block relative  w-[350px] h-[560px] brightness-50 overflow-hidden">
           <Image src={LeProtDsk} alt="Del Sol" fill />
-          <p className="absolute top-8 right-0 text-3xl font-bold text-white/50">
+          <p className="absolute top-8 -right-2.5 text-3xl font-bold text-white/50">
             3
           </p>
         </div>

@@ -40,8 +40,8 @@ import Heritage from "/public/imgs/about/desktop/image-heritage.jpg";
 
 const Page = () => {
   return (
-    <main className="flex flex-col relative w-full min-h-screen md:ml-2 md:px-24 text-black">
-      <p className="hidden md:block absolute top-5 left-7 text-cus_l_gray transform rotate-90 text-base tracking-widest">
+    <main className="flex flex-col relative w-full min-h-screen md:ml-2 md:px-24 text-cus_d_blue">
+      <p className="hidden md:block absolute left-0 top-8 lg:left-7 text-cus_l_gray transform rotate-90 text-base tracking-widest">
         A B O U T
       </p>
       {/* Hero */}
@@ -63,7 +63,6 @@ const Page = () => {
           <h1 className="hidden md:block absolute lg:top-[130px] md:top-44 md:-right-16 lg:right-5 z-20 font-semibold md:text-[10rem] lg:text-3xl text-cus_vl_gray">
             About
           </h1>
-          {/*  */}
           <div
             className="flex flex-col justify-end items-center absolute bg-white 
             w-full pl-8 md:pl-0 h-[350px] -left-7 -bottom-80 
@@ -86,9 +85,9 @@ const Page = () => {
         </div>
       </div>
       {/* Heritage */}
-      <div className="w-full lg:w-[90%] mx-auto flex mb-20 md:mb-32 mt-32 md:mt-0 px-10">
+      <div className="w-full lg:w-[90%] lg:mx-auto flex mb-20 md:mb-32 mt-60 lg:mt-0 px-10">
         <div className="w-full lg:w-1/2 pr-12">
-          <div className="h-1 w-20 border-b-2 border-cus_m_gray mb-20"></div>
+          <div className="h-1 w-20 border-b-2 border-cus_m_gray lg:mb-20"></div>
           <h2 className="text-[3rem] font-bold md:text-xl pt-9">Our</h2>
           <h2 className="text-[3rem] font-bold md:text-xl mb-12">Heritage</h2>
           <div className="w-full lg:w-3/4">
@@ -119,8 +118,8 @@ const Page = () => {
       {/* Leaders */}
       <div className="w-full lg:w-[90%] lg:mx-auto flex flex-col lg:flex-row">
         <div className="w-1/3 self-start ml-8">
-          <h2 className="text-[3rem] font-bold lg:text-xl">The</h2>
-          <h2 className="text-[3rem] font-bold lg:text-xl">Leaders</h2>
+          <h2 className="text-[3rem] font-bold md:text-xl">The</h2>
+          <h2 className="text-[3rem] font-bold md:text-xl">Leaders</h2>
         </div>
         <div className="w-full px-8 md:px-0 lg:w-2/3">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-y-12">

@@ -72,7 +72,7 @@ const Page = () => {
   return (
     <main className="flex flex-col relative w-full min-h-screen md:ml-2 md:px-24 text-white ">
       {/*  */}
-      <p className="hidden md:block absolute top-16 -left-2 text-cus_l_gray transform rotate-90 text-base tracking-widest">
+      <p className="hidden md:block absolute top-16 -left-8 lg:-left-1 text-cus_l_gray transform rotate-90 text-base tracking-widest">
         P O R T F O L I O
       </p>
       {/* Desktop */}
@@ -82,7 +82,7 @@ const Page = () => {
             key={index}
             className="flex aspect-auto relative justify-center items-center"
           >
-            <div className="relative w-[320px] h-[560px] hover:opacity-70 hover:cursor-pointer">
+            <div className="relative w-[320px] h-[560px] hover:opacity-70 hover:cursor-pointer duration-300 transform hover:scale-110">
               <Image src={`${desk}${img.imgs}`} alt={img.title} fill />
               <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/70"></div>
               <div className="text-white absolute bottom-3 left-5 ">
@@ -100,7 +100,7 @@ const Page = () => {
             key={index}
             className="flex aspect-auto relative justify-center items-center"
           >
-            <div className="relative w-[573px] h-[240px] hover:opacity-70 hover:cursor-pointer">
+            <div className="relative w-[573px] h-[240px] hover:opacity-70 hover:cursor-pointer duration-300 transform hover:scale-110">
               <Image src={`${tblt}${img.imgs}`} alt={img.title} fill />
               <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/70"></div>
               <div className="text-white absolute bottom-3 left-5 ">

@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="w-screen h-screen">
       <body className={`${spartan.className} w-full h-full`}>
         <div className="flex">
-          <div className="hidden md:block ml-[50px] lg:ml-[77px] w-1 h-[104px] border-r-2 border-cus_l_gray"></div>
+          <div className="hidden md:block ml-[50px] lg:ml-[77px] w-1 h-[62px] lg:h-[104px] border-r-2 border-cus_l_gray"></div>
           <Nav />
         </div>
         {children}

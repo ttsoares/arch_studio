@@ -24,7 +24,7 @@ function ContactForm() {
   }
 
   return (
-    <div className="w-full ml-5 flex flex-col">
+    <div className="w-full lg:ml-5 flex flex-col">
       <form
         onSubmit={handleSubmit(onSubmit)}
         noValidate

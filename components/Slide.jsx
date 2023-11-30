@@ -43,7 +43,7 @@ const Slide = ({ index }) => {
   return (
     <>
       {/* SD || Mobile*/}
-      <div className="relative w-[375px] h-[560px] md:hidden brightness-50">
+      <div className="relative w-full h-[560px] md:hidden brightness-50">
         <Image src={DATA[index].imgmb} alt={DATA[index].title1} fill />
       </div>
       {/* MD || Tablet*/}

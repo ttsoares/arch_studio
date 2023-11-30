@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="flex flex-col relative w-full min-h-screen md:ml-2 md:px-24 text-white">
       {/*  */}
-      <p className="hidden md:block absolute top-5 left-2 lg:left-9 text-cus_l_gray transform rotate-90 text-base tracking-widest">
+      <p className="hidden md:block absolute top-6 left-2 lg:left-9 text-cus_l_gray transform rotate-90 text-base tracking-widest">
         H O M E
       </p>
 
@@ -88,7 +88,7 @@ export default function Home() {
       </div>
 
       {/* Welcome */}
-      <div className="w-full lg:w-[90%] relative flex flex-col lg:flex-row lg:mx-auto mt-10 lg:mt-32 mb-20 lg:mb-32 overflow-hidden">
+      <div className="w-full lg:w-[90%] relative flex flex-col lg:flex-row lg:mx-auto mt-10 lg:mt-32 mb-20 lg:mb-32">
         <p className="hidden md:block self-center lg:absolute -top-20 z-20 font-bold text-[10rem] lg:text-3xl text-cus_vl_gray">
           Welcome
         </p>
