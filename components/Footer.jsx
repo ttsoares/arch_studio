@@ -13,7 +13,7 @@ import Button from "@/components/Button";
 const Footer = () => {
   return (
     <div className="flex  flex-col md:flex-row w-full lg:w-[77%] h-40 mx-auto mt-32 items-center justify-between relative">
-      <div className="bg-cus_vl_gray flex flex-col md:flex-row items-center justify-start w-full md:w-[80%] relative">
+      <div className="bg-cus_vl_gray flex flex-col md:flex-row items-center justify-start w-full md:w-[87%] relative">
         <Link href="/">
           <div className="absolute -top-16 left-32 md:static w-28 h-28 lg:w-40 lg:h-40 bg-black flex duration-1000 transform hover:invert">
             <Image
