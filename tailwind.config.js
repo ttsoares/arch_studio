@@ -48,6 +48,16 @@ module.exports = {
         md: "768px",
         lg: "1440px",
       },
+      keyframes: {
+        shift: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(20px)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        shiftx: "shift 1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

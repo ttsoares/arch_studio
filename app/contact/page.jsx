@@ -67,7 +67,7 @@ const Page = () => {
         </div>
         <div className="w-full flex flex-col lg:flex-row justify-between lg:w-1/2 ">
           <div className="w-full lg:w-1/2 m-5 text-sm text-cus_d_gray border-2 flex flex-col md:flex-row lg:flex-col justify-between">
-            <div>
+            <div className="peer hover:cursor-crosshair">
               <p className="mb-4 font-semibold ">Main Office</p>
               <p>
                 Mail: <span className="ml-14">archone@mail.com</span>
@@ -79,13 +79,13 @@ const Page = () => {
                 Phone: <span className="ml-5">123-456-3451</span>
               </p>
             </div>
-            <div className="mt-6 ml-2 flex justify-start items-center">
+            <div className="mt-6 ml-2 flex justify-start items-center peer-hover:animate-shiftx">
               <p className="mr-4 font-bold">View on the map</p>
               <Image src={Arrow} alt="arrow right" width={20} height={20} />
             </div>
           </div>
-          <div className="w-full lg:w-1/2 m-5 text-sm text-cus_d_gray border-2 flex lg:flex-col justify-between">
-            <div>
+          <div className="w-full lg:w-1/2 m-5 text-sm text-cus_d_gray border-2 flex flex-col md:flex-row lg:flex-col justify-between">
+            <div className="peer hover:cursor-crosshair">
               <p className="mb-4 font-semibold ">Office II</p>
               <p>
                 Mail: <span className="ml-14">archtwo@mail.com</span>
@@ -97,7 +97,7 @@ const Page = () => {
                 Phone: <span className="ml-5">832-123-4321</span>
               </p>
             </div>
-            <div className="mt-6 ml-2 flex justify-start items-center">
+            <div className="mt-6 ml-2 flex justify-start items-center peer-hover:animate-shiftx">
               <p className="mr-4 font-bold">View on the map</p>
               <Image src={Arrow} alt="arrow right" width={20} height={20} />
             </div>

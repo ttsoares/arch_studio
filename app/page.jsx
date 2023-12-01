@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* Welcome */}
       <div className="w-full lg:w-[90%] relative flex flex-col lg:flex-row lg:mx-auto mt-10 lg:mt-32 mb-20 lg:mb-32">
-        <p className="hidden md:block self-center lg:absolute -top-20 z-20 font-bold text-[10rem] lg:text-3xl text-cus_vl_gray">
+        <p className="hidden md:block self-center lg:absolute -top-20 z-20 font-bold text-[9rem] lg:text-3xl text-cus_vl_gray">
           Welcome
         </p>
         <div className="lg:mt-20 w-full lg:w-2/3  text-black">

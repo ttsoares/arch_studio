@@ -27,7 +27,7 @@ export const MENU_ITENS = [
 
 //-----------------
 const Nav = () => {
-  const [showBM, setShowBM] = useState(true);
+  const [showBM, setShowBM] = useState(false);
   const router = useRouter();
 
   function toggleMenu() {
